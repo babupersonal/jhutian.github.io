@@ -298,7 +298,13 @@ var swiper = new Swiper('.swiper-container', {
     },
   });
 
-  var swipercard = new Swiper(".swiper-card", {
-    effect: "cards",
-    grabCursor: true,
+  var cardswiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
   });
